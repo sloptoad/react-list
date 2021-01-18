@@ -1,0 +1,67 @@
+.App {
+  text-align: center;
+}
+body{
+  background: #e0e1e2;
+}
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+.back{
+  position: absolute;
+  left: 5%;
+  bottom: 7%;
+  text-decoration: underline;
+}
+.ui.cards>.card:hover{
+  background: rgba(0,0,0,.03);
+    color: rgba(0,0,0,.8);
+  webkit-transition: .1s color ease,.1s padding-left ease,.1s background-color ease;
+    transition: .1s color ease,.1s padding-left ease,.1s background-color ease;
+}
+.edit-link.basic.green.button{
+  color: #21ba45!important;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.ui.header>h2{
+  font-size:36px;
+  padding: 10px;
+}
+.ui.cards{
+  margin: 5px 0;
+}
+@media only screen and (min-width: 600px) {
+  .ui.cards{
+    display: inline-grid;
+  }
+
+}
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
